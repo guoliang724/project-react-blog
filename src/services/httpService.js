@@ -17,7 +17,7 @@ axios.interceptors.response.use(null, (error) => {
   else if (error.response && error.response.status === 401)
     toast("Access Denied....");
   else if (expectedError) {
-    toast("unexpected error....");
+    toast("unexpected error: try another name please...");
   }
   return Promise.reject(error);
 });

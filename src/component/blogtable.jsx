@@ -82,6 +82,7 @@ class BlogTable extends Component {
                 </td>
 
                 <td>{blog.createTime}</td>
+
                 {user && user.author === blog.author && (
                   <React.Fragment>
                     <td>

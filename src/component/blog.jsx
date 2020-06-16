@@ -28,7 +28,9 @@ class Blog extends Component {
             New Blog
           </Link>
         )}
-        <p className="text-success">Showing {length} wonderful articles </p>
+        <p className="text-success mt-3">
+          Showing {length} wonderful articles{" "}
+        </p>
         <SearchBox value={searchQuery} onChange={onSearch} />
         <BlogTable
           user={user}

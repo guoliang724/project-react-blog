@@ -2,9 +2,7 @@ import http from "./httpService";
 
 const endPoint = "https://aqueous-atoll-66200.herokuapp.com/api/users";
 const Regist = async (user) => {
-  const { data } = await http.post(endPoint + "/new", user);
-  console.log("data", data);
-  return data;
+  return await http.post(endPoint + "/new", user);
 };
 
 export default Regist;

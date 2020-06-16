@@ -36,15 +36,20 @@ class Blogs extends Component {
   };
 
   handleLike = async (blog) => {
-    console.log("app blog", blog);
+    const originalBlogs = JSON.parse(JSON.stringify(this.state.blogs));
+    console.log("1", originalBlogs);
     let blogs = [...this.state.blogs];
     const index = blogs.indexOf(blog);
     blog.likes += 1;
-    console.log("afer++ blog", blog);
     blogs[index] = { ...blog };
-    console.log("after++ blogs");
-    this.setState({ blogs });
-    await UpdateBlogLike(blog);
+    console.log("2", originalBlogs);
+    try {
+      this.setState({ blogs });
+      await UpdateBlogLike(blog);
+    } catch (ex) {
+      console.log("having errors");
+      this.setState({ blogs: originalBlogs });
+    }
   };
 
   handleSort = (sorted) => {
@@ -94,7 +99,7 @@ class Blogs extends Component {
     blogs = Paginate(sortedBlogs, currentPage, maxNumberInPage);
 
     return (
-      <div className="row pt-3 mt-auto">
+      <div className="row p-2 mt-auto">
         <List
           types={types}
           selectedItem={selectedItem}

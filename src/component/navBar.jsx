@@ -41,7 +41,7 @@ class NavBar extends Component {
                   {user.author}
                 </Link>
                 <Link className="nav-item nav-link" to="/logout">
-                  <i class="fa fa-sign-out" aria-hidden="true">
+                  <i className="fa fa-sign-out" aria-hidden="true">
                     Log-Out
                   </i>
                 </Link>

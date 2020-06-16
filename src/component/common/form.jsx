@@ -46,11 +46,10 @@ class Form extends Component {
     e.preventDefault();
     const errors = this.validateAll(this.state.data, this.schema);
     this.setState({ errors: errors || {} });
-    console.log("form module", errors);
     if (errors) return;
     //
-    console.log("does submit!");
     this.doSubmit();
+    console.log("does submit!");
   };
   renderInput = (name, label, isDisabled = false) => {
     const { errors, data } = this.state;

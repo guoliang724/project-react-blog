@@ -6,7 +6,7 @@ class List extends Component {
 
     return (
       <div>
-        <ul className="list-group col p-3 ml-3">
+        <ul className="list-group col p-3">
           {types.map((type, index) => (
             <li
               key={index}
