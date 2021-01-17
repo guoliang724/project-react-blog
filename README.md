@@ -1,4 +1,6 @@
-Please visit https://glacial-everglades-11930.herokuapp.com/home
+Please visit: http://blog.guoliang831.com/home
+or
+https://glacial-everglades-11930.herokuapp.com/home
 
 Skills: 
 Back-end: Node.js + express+ MongoDB
