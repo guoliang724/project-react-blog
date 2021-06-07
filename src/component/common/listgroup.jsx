@@ -5,7 +5,7 @@ class List extends Component {
     const { types, selectedItem, onSelected } = this.props;
 
     return (
-      <div>
+      <div className="cate_list pt-5">
         <ul className="list-group col p-3">
           {types.map((type, index) => (
             <li

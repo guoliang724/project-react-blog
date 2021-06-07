@@ -99,13 +99,13 @@ class Blogs extends Component {
     blogs = Paginate(sortedBlogs, currentPage, maxNumberInPage);
 
     return (
-      <div className="row p-2 mt-auto">
-        <List
+      <div className="row pr-2 ">
+        <List className="col"
           types={types}
           selectedItem={selectedItem}
           onSelected={this.handleSelected}
         />
-        <Blog
+        <Blog className="col-5"
           user={user}
           blogs={blogs}
           length={filteredBlogs.length}

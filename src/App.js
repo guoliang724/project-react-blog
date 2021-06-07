@@ -14,6 +14,7 @@ import auth from "./services/auth";
 import ReadForm from "./component/readform";
 import "react-toastify/dist/ReactToastify.css";
 import "bootstrap/dist/css/bootstrap.css";
+
 import "font-awesome/css/font-awesome.css";
 
 class App extends Component {

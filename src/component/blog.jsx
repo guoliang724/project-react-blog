@@ -22,7 +22,7 @@ class Blog extends Component {
     } = this.props;
 
     return (
-      <div className="col-9 p-3 m-3">
+      <div className="col-9 p-3">
         {user && (
           <Link to="/blog/new" className="btn btn-primary">
             New Blog
