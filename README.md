@@ -1,8 +1,7 @@
 Please visit: http://blog.guoliang831.com/home
-or
-https://glacial-everglades-11930.herokuapp.com/home
 
-Skills: 
+
+Stack Skills: 
 Back-end: Node.js + express+ MongoDB
 Front-end: React + Axios
 
